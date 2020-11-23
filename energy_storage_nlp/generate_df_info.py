@@ -6,7 +6,7 @@ import sys
 
 data_folder = r'C:\Users\aspit\Git\MHDLab-Projects\Energy Storage\data'
 
-con = sqlite3.connect(os.path.join(data_folder, 'nlp.db'))
+con = sqlite3.connect(os.path.join(data_folder, 'nlp_justenergystorage.db'))
 cursor = con.cursor()
 
 df = pd.read_sql_query("SELECT * FROM texts", con, index_col='ID')
