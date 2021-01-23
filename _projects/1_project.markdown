@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
-<html>
+---
+layout: post
+title: Energy Storage Abstract Clustering
+description: a project with a background image
+img: /assets/img/lit-clustering.png
+importance: 1
+---
+
 <head>
-  <title>Energy Storage Abstract Clustering</title>
   <style>
 
   .column {
@@ -93,5 +96,3 @@
 
 
 </body>
-</html>
-  
