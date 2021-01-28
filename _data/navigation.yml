@@ -4,5 +4,5 @@ docs:
 - title: Home
   url: /index.html
 
-- title: Blog
-  url: /blog/index.html
+# - title: Blog
+#   url: /blog/index.html

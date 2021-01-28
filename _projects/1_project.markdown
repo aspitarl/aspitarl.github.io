@@ -1,98 +1,49 @@
 ---
 layout: post
-title: Energy Storage Abstract Clustering
-description: a project with a background image
+title: Scientific Abstract Topic Modeling
+description: Utilizing machine learning to facilitate scientific literature review
 img: /assets/img/lit-clustering.png
 importance: 1
 ---
 
-<head>
-  <style>
 
-  .column {
-    float: left;
-  }
+Below are interactive plots visualizing topic modeling on a collection of article abstracts pulled from [Microsoft Academic](https://academic.microsoft.com/home) related to energy storage.   The abstracts were obtained with the search term "Energy Storage", keeping the top 10000 results. Duplicate papers were removed (identified by DOI) and only articles in english were retained, resulting in 6959 abstracts.
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
 
-  }
-  </style>
-      
-</head>
 
-<body>
+# Topic Modeling with Latent Dirichlet Allocation
 
-<h1>
-  <center>Clustering of abstracts related to energy storage</center>
-</h1>
 
-<p>
-  Below are interactive plots visualizing topic modeling on a collection of article abstracts pulled from <a href=https://academic.microsoft.com/home>Microsoft Academic</a> related to energy storage.   The abstracts were obtained with the search term "Energy Storage", keeping the top 10000 results. Duplicate papers were removed (identified by DOI) and only articles in english were retained, resulting in 6959 abstracts.
-</p>
 
-<h2>
-  Topic Modeling with Latent Dirichlet Allocation
-</h2>
+Topic modeling was performed using Latent Diriclet Allocation (LDA) with [Gensim](https://radimrehurek.com/gensim/). LDA is an unsupervised machine learning technique to determine a set of topics that can represnt the modeled collection of texts (corpus). 
 
-<p>
-  Topic modeling was performed using Latent Diriclet Allocation (LDA) with <a href=https://radimrehurek.com/gensim/>Gensim</a>. LDA is an unsupervised machine learning technique to determine a set of topics that can represnt the modeled collection of texts (corpus). 
+Each document is given a probability of being in each topic, where topics are probability distributions over words. This is a 'soft' clustering technique, in contrast to Kmeans (used previously) which assigns each document to just one cluster. This removes the nuance of papers that lie at the intersection between fields.
 
-  Each document is given a probability of being in each topic, where topics are probability distributions over words. This is a 'soft' clustering technique, in contrast to Kmeans (used previously) which assigns each document to just one cluster. This removes the nuance of papers that lie at the intersection between fields.
-</p>
 
-<h2> Topic Visualization with t-SNE </h2>
+# Topic Visualization with t-SNE
 
-<p>
-  Below is a visualization of the topic modeling of the corpus. First, the texts are represented as points on a 2D surface using t-Distributed Stochastic Neighbor Embedding (t-SNE). 
 
-  The topic distribution for each paper is visualized by representing each paper as a pie chart. Each slice represents a topic, and the fractional size (angle) of each slice represents the probability of that topic. Only the top 3 topics for each paper are inclused (resulting in an incomplete pie chart) for the sake of graphics processing. 
+Below is a visualization of the topic modeling of the corpus. First, the texts are represented as points on a 2D surface using t-Distributed Stochastic Neighbor Embedding (t-SNE). 
 
-  The top words for each topic are indicated in the legend (see next visualization to explore the topic words in more detail). The topics in the legend are sorted by the number of papers that have that topic as their most probable topic.
+The topic distribution for each paper is visualized by representing each paper as a pie chart. Each slice represents a topic, and the fractional size (angle) of each slice represents the probability of that topic. Only the top 3 topics for each paper are inclused (resulting in an incomplete pie chart) for the sake of graphics processing. 
 
-  <br><br>
-  To use the plot, mouse over each item to get information about the paper. Papers can be clicked to open up the articles web page (you will have to allow popups). Use the tools on the right to move around, and note the 'refresh' button to reset the graph. Topics can be hidden by clicking on the topic color in the legend.
-</p>
+The top words for each topic are indicated in the legend (see next visualization to explore the topic words in more detail). The topics in the legend are sorted by the number of papers that have that topic as their most probable topic.
+
+To use the plot, mouse over each item to get information about the paper. Papers can be clicked to open up the articles web page (you will have to allow popups). Use the tools on the right to move around, and note the 'refresh' button to reset the graph. Topics can be hidden by clicking on the topic color in the legend.
+
 
 
 <div class="row">
-
   <embed type="text/html" src="wedgeplot.html" style="width:100%" height=950> 
-
-
 </div>
 
-<h2> Topic Visualization with pyLDAvis </h2>
+# Topic Visualization with pyLDAvis 
 
-<p>
 
-  Below is the visualization of the LDA model using <a href=https://github.com/bmabey/pyLDAvis>pyLDAvis</a>. The graph on the left using Principal Component Analysis to visualize the topics in 2D, similar to TSNE. The dashboard on the right is useful for exploring the words associated with each topic. Slide the relevance metric to about 0.5 to get words more specific to each topic. 
-
-</p>
+  Below is the visualization of the LDA model using [pyLDAvis](https://github.com/bmabey/pyLDAvis). The graph on the left using Principal Component Analysis to visualize the topics in 2D, similar to TSNE. The dashboard on the right is useful for exploring the words associated with each topic. Slide the relevance metric to about 0.5 to get words more specific to each topic. 
 
 
 <div class="row">
 <embed type="text/html" src="lda_model.html" style="width:100%" height=900> 
 </div>
 
-
-<p>
-  <center>Contact: lee.aspitarte@netl.doe.gov</center>
-</p>
-
-<!-- <h1> Model Parameters</h1>
-
-<p>
-  Bigram modeling parameters: {'min_count': 5, 'threshold': 100}
-  <br>
-  Num Bigrams: 887, Total Words: 21966, Bigram Fraction: 0.04
-  <br>
-  LDA modeling paramters: {'alpha': 0.3, 'eta': 0.1, 'num_topics': 20, 'passes': 5}
-
-</p> -->
-
-
-</body>
