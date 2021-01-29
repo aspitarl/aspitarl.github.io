@@ -21,7 +21,7 @@ Each document is given a probability of being in each topic, where topics are pr
 
 # Identifying Research Communities with Louvian Community detection
 
-To understand the high level structure of the corpus I perform topic modeling with 200 topics, and calculate the probability that a given pair of topics are present together in the same paper. This co-occurence matrix defines the edges of a graph where the nodes are each topic. Research communities are then determined through the Louvian communitiy detection algorithm, as described in [Bickel (2019)](https://energsustainsoc.biomedcentral.com/articles/10.1186/s13705-019-0226-z).
+To understand the high level structure of the corpus I perform topic modeling with 80 topics, and calculate the probability that a given pair of topics are present together in the same paper. This co-occurence matrix defines the edges of a graph where the nodes are each topic. Research communities are then determined through the Louvian communitiy detection algorithm, as described in [Bickel (2019)](https://energsustainsoc.biomedcentral.com/articles/10.1186/s13705-019-0226-z).
 
 The features of the plot indicate the following:
 
