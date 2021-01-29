@@ -36,7 +36,7 @@ The features of the plot indicate the following:
 
 
 
-# Topic Visualization with t-SNE
+# Per-paper Topic Distribution Visualization with t-SNE
 
 The plot below goes further and visualizes the topic distributions of each individual paper. To be able to visualize the topics, the number of topics is reduced 
 
