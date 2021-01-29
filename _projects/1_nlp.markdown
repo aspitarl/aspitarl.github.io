@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: Scientific Abstract Topic Modeling
 description: Utilizing machine learning to facilitate scientific literature review
-img: /assets/img/lit-clustering.png
+img: /projects/1_nlp/lit-clustering.png
 importance: 1
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Magnetohydrodynamic power generation
 description: Research into MHD power generation to enable oxy-fuel carbon capture
 img: /projects/2_aiaa/TurbovsMHD.PNG
@@ -20,7 +20,9 @@ engineering challenges. The goal of the MHD group is to reexamine the prospect
 of overcoming these challenges with modern scientific insights and technology. 
 
 
-![](TurbovsMHD.PNG)  
+<img src="TurbovsMHD.PNG" style="width:1000px;"/>
+
+<!-- ![](TurbovsMHD.PNG =250x)   -->
 
 
 At NETL we study MHD power generation with a high-velociy  oxy-fuel combustion system
