@@ -7,7 +7,7 @@ importance: 1
 ---
 
 
-Below are interactive plots visualizing topic modeling on a collection of article abstracts pulled from [Microsoft Academic](https://academic.microsoft.com/home) related to energy storage.   The abstracts were obtained with the search term "Energy Storage", keeping the top 100000 results. Duplicate papers were removed (identified by DOI) and only articles in english were retained, resulting in approximately 40000 abstracts.
+We are interested in using natural language processing to facilitate literature review. Below are interactive plots visualizing topic modeling on a collection of article abstracts pulled from [Microsoft Academic](https://academic.microsoft.com/home) related to energy storage.   The abstracts were obtained with the search term "Energy Storage", keeping the top 100000 results. Duplicate papers were removed (identified by DOI) and only articles in english were retained, resulting in approximately 40000 abstracts.
 
 
 
@@ -31,7 +31,7 @@ The features of the plot indicate the following:
 * Probability of the topic over the past 5 years: Opacity 
 
 <div class="row" style="width:100%">
-  <embed type="text/html" src="es_network.html" style="width:100%" height=950> 
+  <embed type="text/html" src="es_network.html" style="width:100%" height=1250> 
 </div>
 
 
