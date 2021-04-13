@@ -7,3 +7,4 @@ redirect: https://mhdlab.github.io/projects/2_aiaa/
 importance: 1
 ---
 
+# Moved to [MHD Lab Website](https://mhdlab.github.io/projects/2_aiaa/)
