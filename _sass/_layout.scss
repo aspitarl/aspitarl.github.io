@@ -167,12 +167,11 @@ pre code.hljs {
   }
   nav {
     float: none;
-    padding: 1.25em 0;
+    padding: 0em 0;
     @include media ($tablet) {
       float: left;
       line-height: 1.5em;
-    }
-  }
+    } 
   ul.navigation-menu {
     clear: both;
     display: none;
@@ -230,7 +229,7 @@ pre code.hljs {
 		display: inline-block;
 		display:inline;
 	  }
-	padding: 1em 0.5em;
+	padding: 0em 0.5em;
 	list-style-type: none;
 
   }
