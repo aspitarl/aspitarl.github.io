@@ -2,7 +2,7 @@
 layout: page
 title: Building citation maps to obtain literature datasets for NLP
 description: Using the semantic scholar research corpus citation data to form corpora for NLP
-img: /projects/1_nlp/lit-clustering.png
+img: /projects/3_citationmaps/citation-map.png
 importance: 1
 ---
 
