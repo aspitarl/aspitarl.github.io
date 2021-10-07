@@ -31,7 +31,7 @@ One of the main challenes I've encountered in natural language processing of sci
 
 # Building a Citation network for "Geographic imaging system"
 
-The semantic scholar dataset includes information about **references and citations** for a paper, allowing us to build graphs of citations. 
+The semantic scholar dataset includes information about **references and citations** for a paper, allowing us to build graphs of citations. The 2D layouts are determined by the [Force Atlas Algorithm](https://github.com/bhargavchippada/forceatlas2)
 
 ### Citation network algorithm
 
